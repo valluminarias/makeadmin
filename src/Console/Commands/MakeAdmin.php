@@ -67,7 +67,7 @@ class MakeAdmin extends Command
         $this->info('Creating the user.');
 
         try {
-            factory(User::class)->create($user)
+            User::create($user)
                 ->assign('admin');
 
             $this->info('User created.');
