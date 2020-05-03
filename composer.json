@@ -1,7 +1,7 @@
 {
     "name": "valluminarias/makeadmin",
     "description": "Make Admin Command for Laravel App",
-    "version": "1.0-dev",
+    "version": "1.0.0",
     "type": "library",
     "license": "MIT",
     "authors": [{
