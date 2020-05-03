@@ -1,10 +1,18 @@
 # makeadmin
+[![Latest Stable Version](https://poser.pugx.org/valluminarias/makeadmin/v/stable)](https://packagist.org/packages/valluminarias/makeadmin)
+[![Total Downloads](https://poser.pugx.org/valluminarias/makeadmin/downloads)](https://packagist.org/packages/valluminarias/makeadmin)
+[![License](https://poser.pugx.org/valluminarias/makeadmin/license)](https://packagist.org/packages/valluminarias/makeadmin)
+
 Simple command for creating admin user Laravel App.
 
 ## Installation
 Install through composer.
 ```bash
 composer require valluminarias/makeadmin
+```
+Run migration
+```bash
+php artisan migrate
 ```
 
 ## Creating the Admin User
