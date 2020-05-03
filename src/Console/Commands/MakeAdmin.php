@@ -101,7 +101,7 @@ class MakeAdmin extends Command
     private function confirmPassword()
     {
         $confirm = $this->secret('Confirm Password');
-        while ($this->upass !== $confirm) {
+        while (strcmp($this->upass, $confirm) <> 0) {
             $this->error('Passwords do not match.');
             $this->password();
         }
