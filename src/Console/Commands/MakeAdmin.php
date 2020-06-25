@@ -59,6 +59,7 @@ class MakeAdmin extends Command
             'email' => $this->email,
             'username' => $this->uname,
             'password' => Hash::make($this->upass),
+            'is_admin' => true, 
         ]);
     }
 
@@ -67,8 +68,8 @@ class MakeAdmin extends Command
         $this->info('Creating the user.');
 
         try {
-            User::create($user)
-                ->assign('admin');
+
+            User::create($user);
 
             $this->info('User created.');
         } catch (\Exception $e) {
